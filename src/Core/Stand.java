@@ -4,10 +4,14 @@
  */
 package Core;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author jbarreno
  */
 public class Stand {
-    
+    private int id;
+    private float precio;
+    private ArrayList<Editorial> editoriales;
 }

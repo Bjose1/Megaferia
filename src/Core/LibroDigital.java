@@ -4,10 +4,13 @@
  */
 package Core;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author jbarreno
  */
-public class LibroDigital {
-    
+public class LibroDigital extends Libro{
+    private boolean hasHipervinculos;
+    private ArrayList<String> hipervinculos;
 }

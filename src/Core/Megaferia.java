@@ -4,10 +4,13 @@
  */
 package Core;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author jbarreno
  */
 public class Megaferia {
-    
+    private ArrayList<Stand> stands;
+    private ArrayList<Editorial> editoriales;
 }

@@ -8,6 +8,7 @@ package Core;
  *
  * @author jbarreno
  */
-public class AudioLibro {
-    
+public class AudioLibro extends Libro{
+    private int duracion;
+    private Narrador narrador;
 }

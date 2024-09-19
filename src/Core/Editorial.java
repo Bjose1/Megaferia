@@ -4,10 +4,17 @@
  */
 package Core;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author jbarreno
  */
 public class Editorial {
-    
+    private String nit;
+    private String nombre;
+    private String direccion;
+    private Gerente gerente;
+    private ArrayList<Libro> libros; 
+    private ArrayList<Stand> stands;
 }

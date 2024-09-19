@@ -4,10 +4,12 @@
  */
 package Core;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author jbarreno
  */
-public class Autor {
-    
+public class Autor extends Persona {
+    private ArrayList<Libro> libros;
 }

@@ -8,6 +8,7 @@ package Core;
  *
  * @author jbarreno
  */
-public class LibroImpreso {
-    
+public class LibroImpreso extends Libro {
+    private int paginas;
+    private int numEjemplares;
 }

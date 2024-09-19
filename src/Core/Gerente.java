@@ -8,6 +8,6 @@ package Core;
  *
  * @author jbarreno
  */
-public class Gerente {
-    
+public class Gerente extends Persona{
+    private Editorial editorial;
 }

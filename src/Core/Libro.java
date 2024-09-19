@@ -4,10 +4,19 @@
  */
 package Core;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author jbarreno
  */
-public class Libro {
-    
+public abstract class Libro {
+    protected String titulo;
+    protected ArrayList<Autor> autores;
+    protected String isbn;
+    protected String genero;
+    protected float valor;
+    protected String formato;
+    protected Editorial editorial;
+       
 }
