@@ -4,10 +4,21 @@
  */
 package Core;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author jbarreno
  */
 public class Gerente extends Persona{
     private Editorial editorial;
+    
+    public Gerente (String nombre, int cedula){
+        super( nombre,  cedula);
+        this.editorial=null;
+    }
+    
+    public void setEditorial(Editorial editorial){
+        this.editorial=editorial;
+    }
 }

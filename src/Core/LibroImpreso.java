@@ -4,6 +4,8 @@
  */
 package Core;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author jbarreno
@@ -11,4 +13,9 @@ package Core;
 public class LibroImpreso extends Libro {
     private int paginas;
     private int numEjemplares;
+    public LibroImpreso (String titulo, ArrayList<Autor> autores , String isbn, String genero, String formato, float Valor, Editorial editorial, int paginas, int numEjemplares){
+        super( titulo,  autores ,  isbn,  genero,  formato,  Valor,  editorial);
+        this.paginas=paginas;
+        this.numEjemplares=numEjemplares;
+    }
 }

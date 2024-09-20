@@ -11,7 +11,25 @@ import java.util.ArrayList;
  * @author jbarreno
  */
 public class Stand {
+    
+    private static int idCount=0;
+    
     private int id;
     private float precio;
     private ArrayList<Editorial> editoriales;
+    public Stand(float precio){
+        this.id=Stand.idCount;
+        this.precio=precio;
+        this.editoriales=new ArrayList<>();
+        
+        Stand.idCount++;
+    }
+    @Override
+    public String toString(){
+       return getClass().getSimpleName() +"("+id+", "+precio+")";
+    }
+    
+    public int getId(){
+        return this.id;
+    }
 }

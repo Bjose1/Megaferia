@@ -4,17 +4,24 @@
  */
 package megaferia;
 
+import Core.Megaferia;
+
 /**
  *
  * @author jbarreno
  */
-public class Megaferia {
+public class Main {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        System.out.println("Hello World");
+      Megaferia megaferia = new Megaferia();
+      megaferia.createStand(100000);
+      megaferia.createStand(200000);
+      megaferia.createStand(150000);
+      
+      megaferia.verifyStands();
     }
     
 }
