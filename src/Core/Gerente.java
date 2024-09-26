@@ -17,8 +17,16 @@ public class Gerente extends Persona{
         super( nombre,  cedula);
         this.editorial=null;
     }
+    @Override
+     public String toString() {
+        return getClass().getSimpleName() +"("+this.nombre +","+this.cedula+")";
+    }
     
     public void setEditorial(Editorial editorial){
         this.editorial=editorial;
+    }
+
+    public String getEditorial() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 }

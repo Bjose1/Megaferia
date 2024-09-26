@@ -32,4 +32,11 @@ public class Stand {
     public int getId(){
         return this.id;
     }
+    public boolean addEditorial(Editorial editorial){
+        if(!this.editoriales.contains(editorial)){
+            this.editoriales.add(editorial);
+            return true;
+        }
+        return false;
+    }
 }

@@ -36,4 +36,12 @@ public class Editorial {
         }
         return false;
     }
+     public boolean addStand(Stand stand){
+         if (this.stands.contains(stand)) {
+             this.stands.add(stand);
+             return true;
+             
+         }
+         return false;
+     }
 }
