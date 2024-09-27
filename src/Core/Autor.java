@@ -12,14 +12,18 @@ import java.util.ArrayList;
  */
 public class Autor extends Persona {
     private ArrayList<Libro> libros;
-    
-    public Autor (String nombre, int cedula){
-        super( nombre,  cedula);
-        this.libros=new ArrayList<>();
+
+    public Autor(String nombre, int cedula) {
+        super(nombre, cedula);
+        this.libros = new ArrayList<>();
+    }
+
+    public ArrayList<Libro> getLibros() {
+        return libros;
     }
     
-    public boolean addLibro(Libro libro){
-        if(!this.libros.contains(libro)){
+    public boolean addLibro(Libro libro) {
+        if (!this.libros.contains(libro)) {
             this.libros.add(libro);
             return true;
         }

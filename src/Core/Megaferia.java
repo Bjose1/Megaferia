@@ -25,21 +25,21 @@ public class Megaferia {
         return getClass().getSimpleName() + "(" + ")";
     }
 
-    public ArrayList<Stand> getStand() {
+    public ArrayList<Stand> getStands() {
         return stands;
     }
 
-    public ArrayList<Editorial> getEditorial() {
+    public ArrayList<Editorial> getEditoriales() {
         return editoriales;
     }
-
+    
     public void createStand(float precio) {
         this.stands.add(new Stand(precio));
     }
 
     public void verifyStands() {
-        for (Stand stand : stands) {
-            System.out.println(stand+"->"+stand.getEditoriales());
+        for (Stand stand : this.stands) {
+            System.out.println(stand + " -> " + stand.getEditoriales());
         }
     }
 
@@ -63,7 +63,7 @@ public class Megaferia {
             }
         }
     }
-
+    
     private Stand getStandById(int standId) {
         for (Stand stand : this.stands) {
             if (stand.getId() == standId) {

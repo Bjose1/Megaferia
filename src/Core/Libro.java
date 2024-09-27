@@ -15,23 +15,36 @@ public abstract class Libro {
     protected ArrayList<Autor> autores;
     protected String isbn;
     protected String genero;
-    protected float valor;
     protected String formato;
+    protected float valor;
     protected Editorial editorial;
     
-    public Libro (String titulo, ArrayList<Autor> autores , String isbn, String genero, String formato, float Valor, Editorial editorial){
-        this.titulo=titulo;
-        this.autores=autores;
-        this.isbn=isbn;
-        this.genero=genero;
-        this.formato=formato;
-        this.valor=valor;
-        this.editorial=editorial;
-        for (Autor autor:this.autores) {
+    public Libro(String titulo, ArrayList<Autor> autores, String isbn, String genero, String formato, float valor, Editorial editorial) {
+        this.titulo = titulo;
+        this.autores = autores;
+        this.isbn = isbn;
+        this.genero = genero;
+        this.formato = formato;
+        this.valor = valor;
+        this.editorial = editorial;
+
+        for (Autor autor : this.autores) {
             autor.addLibro(this);
         }
         this.editorial.addLibro(this);
+    }
+
+    @Override
+    public String toString() {
+        return getClass().getSimpleName() + "(" + this.titulo + ", " + this.isbn + ")";
+    }
+
+    public ArrayList<Autor> getAutores() {
+        return autores;
+    }
     
+    public Editorial getEditorial() {
+        return editorial;
     }
        
 }

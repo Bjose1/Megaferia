@@ -11,22 +11,20 @@ import java.util.ArrayList;
  * @author jbarreno
  */
 public class Gerente extends Persona{
-    private Editorial editorial;
+   private Editorial editorial;
     
-    public Gerente (String nombre, int cedula){
-        super( nombre,  cedula);
-        this.editorial=null;
-    }
-    @Override
-     public String toString() {
-        return getClass().getSimpleName() +"("+this.nombre +","+this.cedula+")";
-    }
-    
-    public void setEditorial(Editorial editorial){
-        this.editorial=editorial;
+    public Gerente(String nombre, int cedula) {
+        super(nombre, cedula);
+        this.editorial = null;
     }
 
-    public String getEditorial() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    public Editorial getEditorial() {
+        return editorial;
     }
+
+    public void setEditorial(Editorial editorial) {
+        this.editorial = editorial;
+    }
+
+   
 }
